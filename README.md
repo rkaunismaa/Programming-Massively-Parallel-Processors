@@ -239,6 +239,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 2 | Heterogeneous Data Parallel Computing | [chapter_02/](chapter_02/) |
 | 3 | Multidimensional Grids and Data | [chapter_03/](chapter_03/) |
 | 4 | Compute Architecture and Scheduling | [chapter_04/](chapter_04/) |
+| 5 | Memory Architecture and Data Locality | [chapter_05/](chapter_05/) |
 
 ---
 

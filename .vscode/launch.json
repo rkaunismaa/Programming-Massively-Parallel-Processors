@@ -153,6 +153,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_04",
             "preLaunchTask": "Build Ch04 (debug)"
+        },
+
+        // ── Chapter 5 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch05: memory types",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_05/memory_types",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_05",
+            "preLaunchTask": "Build Ch05 (debug)"
+        },
+        {
+            "name": "Ch05: tiled matmul",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_05/tiled_matmul",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_05",
+            "preLaunchTask": "Build Ch05 (debug)"
+        },
+        {
+            "name": "Ch05: tiled matmul (boundary checks)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_05/tiled_matmul_bc",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_05",
+            "preLaunchTask": "Build Ch05 (debug)"
+        },
+        {
+            "name": "Ch05: dynamic shared memory",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_05/dynamic_shmem",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_05",
+            "preLaunchTask": "Build Ch05 (debug)"
+        },
+        {
+            "name": "Ch05: roofline analysis",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_05/roofline",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_05",
+            "preLaunchTask": "Build Ch05 (debug)"
         }
     ]
 }
