@@ -1,0 +1,39 @@
+# ── Build outputs ─────────────────────────────────────────────────────────
+# Compiled executables (no extension on Linux)
+chapter_02/vec_add_sequential
+chapter_02/vec_add_cuda
+chapter_02/error_checking
+chapter_02/grayscale
+chapter_02/function_qualifiers
+
+chapter_03/multidim_grid
+chapter_03/color_to_grayscale
+chapter_03/image_blur
+chapter_03/image_blur_7x7
+chapter_03/matrix_multiply
+chapter_03/row_major
+
+chapter_04/barrier_sync
+chapter_04/warp_partitioning
+chapter_04/control_divergence
+chapter_04/query_device
+chapter_04/occupancy
+
+# NVCC intermediate files
+*.o
+*.ptx
+*.cubin
+*.fatbin
+
+# ── Book PDF ──────────────────────────────────────────────────────────────
+*.pdf
+
+# ── Internal memory / session state ──────────────────────────────────────
+memory/
+
+# ── Editor / OS noise ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

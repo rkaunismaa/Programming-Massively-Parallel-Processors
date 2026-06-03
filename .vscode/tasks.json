@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Ch02 (debug)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_02 SM_ARCH=sm_89 DEBUG=1",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "nvcc",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+): (error|warning): (.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build Ch02 (release)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_02 SM_ARCH=sm_89",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build Ch03 (debug)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_03 SM_ARCH=sm_89 DEBUG=1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build Ch03 (release)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_03 SM_ARCH=sm_89",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build Ch04 (debug)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_04 SM_ARCH=sm_89 DEBUG=1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build Ch04 (release)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_04 SM_ARCH=sm_89",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

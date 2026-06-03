@@ -1,0 +1,158 @@
+{
+    // Requires the "NVIDIA Nsight Visual Studio Code Edition" extension.
+    // Extension ID: nvidia.nsight-vscode-edition
+    //
+    // Build with debug symbols first:
+    //   make -C chapter_02 SM_ARCH=sm_89 DEBUG=1
+    //   make -C chapter_03 SM_ARCH=sm_89 DEBUG=1
+    //
+    // Then select a configuration below and press F5.
+    "version": "0.2.0",
+    "configurations": [
+
+        // ── Chapter 2 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch02: vecAdd CUDA",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_02/vec_add_cuda",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/chapter_02",
+            "preLaunchTask": "Build Ch02 (debug)",
+            "cuda": {
+                "runtime": "cuda",
+                "breakOnLaunch": false
+            }
+        },
+        {
+            "name": "Ch02: error checking",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_02/error_checking",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_02",
+            "preLaunchTask": "Build Ch02 (debug)"
+        },
+        {
+            "name": "Ch02: grayscale (data parallelism)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_02/grayscale",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_02",
+            "preLaunchTask": "Build Ch02 (debug)"
+        },
+        {
+            "name": "Ch02: function qualifiers",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_02/function_qualifiers",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_02",
+            "preLaunchTask": "Build Ch02 (debug)"
+        },
+
+        // ── Chapter 3 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch03: multidimensional grid",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_03/multidim_grid",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_03",
+            "preLaunchTask": "Build Ch03 (debug)"
+        },
+        {
+            "name": "Ch03: color to grayscale",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_03/color_to_grayscale",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_03",
+            "preLaunchTask": "Build Ch03 (debug)",
+            "cuda": {
+                // Pause automatically when the kernel first launches —
+                // useful for inspecting thread (0,0) before any work is done.
+                "breakOnLaunch": false
+            }
+        },
+        {
+            "name": "Ch03: image blur",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_03/image_blur",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_03",
+            "preLaunchTask": "Build Ch03 (debug)"
+        },
+        {
+            "name": "Ch03: matrix multiply",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_03/matrix_multiply",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_03",
+            "preLaunchTask": "Build Ch03 (debug)"
+        },
+        {
+            "name": "Ch03: row-major linearization",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_03/row_major",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_03",
+            "preLaunchTask": "Build Ch03 (debug)"
+        },
+
+        // ── Chapter 4 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch04: barrier synchronization",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_04/barrier_sync",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_04",
+            "preLaunchTask": "Build Ch04 (debug)",
+            "cuda": {
+                "breakOnLaunch": false
+            }
+        },
+        {
+            "name": "Ch04: warp partitioning",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_04/warp_partitioning",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_04",
+            "preLaunchTask": "Build Ch04 (debug)"
+        },
+        {
+            "name": "Ch04: control divergence",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_04/control_divergence",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_04",
+            "preLaunchTask": "Build Ch04 (debug)"
+        },
+        {
+            "name": "Ch04: query device properties",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_04/query_device",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_04",
+            "preLaunchTask": "Build Ch04 (debug)"
+        },
+        {
+            "name": "Ch04: occupancy",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_04/occupancy",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_04",
+            "preLaunchTask": "Build Ch04 (debug)"
+        }
+    ]
+}
