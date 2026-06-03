@@ -13,6 +13,11 @@ chapter_03/image_blur_7x7
 chapter_03/matrix_multiply
 chapter_03/row_major
 
+chapter_06/coalescing_demo
+chapter_06/corner_turning
+chapter_06/thread_coarsening
+chapter_06/opt_progression
+
 chapter_05/memory_types
 chapter_05/tiled_matmul
 chapter_05/tiled_matmul_32

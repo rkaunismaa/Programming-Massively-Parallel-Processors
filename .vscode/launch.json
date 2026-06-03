@@ -200,6 +200,44 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_05",
             "preLaunchTask": "Build Ch05 (debug)"
+        },
+
+        // ── Chapter 6 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch06: coalescing demo",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_06/coalescing_demo",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_06",
+            "preLaunchTask": "Build Ch06 (debug)"
+        },
+        {
+            "name": "Ch06: corner turning",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_06/corner_turning",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_06",
+            "preLaunchTask": "Build Ch06 (debug)"
+        },
+        {
+            "name": "Ch06: thread coarsening",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_06/thread_coarsening",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_06",
+            "preLaunchTask": "Build Ch06 (debug)"
+        },
+        {
+            "name": "Ch06: optimization progression",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_06/opt_progression",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_06",
+            "preLaunchTask": "Build Ch06 (debug)"
         }
     ]
 }
