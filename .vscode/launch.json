@@ -379,6 +379,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_09",
             "preLaunchTask": "Build Ch09 (debug)"
+        },
+
+        // ── Chapter 10 ────────────────────────────────────────────────────
+        {
+            "name": "Ch10: reduction simple (Fig 10.6)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_10/reduction_simple",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_10",
+            "preLaunchTask": "Build Ch10 (debug)"
+        },
+        {
+            "name": "Ch10: reduction convergent (Fig 10.9)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_10/reduction_convergent",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_10",
+            "preLaunchTask": "Build Ch10 (debug)"
+        },
+        {
+            "name": "Ch10: reduction shared memory (Fig 10.11)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_10/reduction_shared",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_10",
+            "preLaunchTask": "Build Ch10 (debug)"
+        },
+        {
+            "name": "Ch10: reduction multiblock (Fig 10.13)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_10/reduction_multiblock",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_10",
+            "preLaunchTask": "Build Ch10 (debug)"
+        },
+        {
+            "name": "Ch10: reduction coarsened (Fig 10.15)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_10/reduction_coarsened",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_10",
+            "preLaunchTask": "Build Ch10 (debug)"
         }
     ]
 }

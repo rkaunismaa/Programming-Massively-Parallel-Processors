@@ -244,6 +244,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 7 | Convolution | [chapter_07/](chapter_07/) |
 | 8 | Stencil | [chapter_08/](chapter_08/) |
 | 9 | Parallel Histogram | [chapter_09/](chapter_09/) |
+| 10 | Reduction and Minimizing Divergence | [chapter_10/](chapter_10/) |
 
 ---
 
