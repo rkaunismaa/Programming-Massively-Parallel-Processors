@@ -248,6 +248,8 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 9 | Parallel Histogram | [chapter_09/](chapter_09/) |
 | 10 | Reduction and Minimizing Divergence | [chapter_10/](chapter_10/) |
 | 11 | Prefix Sum (Scan) | [chapter_11/](chapter_11/) |
+| 12 | Merge | [chapter_12/](chapter_12/) |
+| 13 | Sorting | [chapter_13/](chapter_13/) |
 
 ---
 
