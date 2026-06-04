@@ -285,6 +285,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_07",
             "preLaunchTask": "Build Ch07 (debug)"
+        },
+
+        // ── Chapter 8 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch08: 1D stencil",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_08/stencil1d",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_08",
+            "preLaunchTask": "Build Ch08 (debug)"
+        },
+        {
+            "name": "Ch08: 3D basic stencil (Fig 8.6)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_08/stencil3d_basic",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_08",
+            "preLaunchTask": "Build Ch08 (debug)"
+        },
+        {
+            "name": "Ch08: 3D shared memory tiling (Fig 8.8)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_08/stencil3d_shared",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_08",
+            "preLaunchTask": "Build Ch08 (debug)"
+        },
+        {
+            "name": "Ch08: 3D coarsened z (Fig 8.10)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_08/stencil3d_coarsened",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_08",
+            "preLaunchTask": "Build Ch08 (debug)"
+        },
+        {
+            "name": "Ch08: 3D register tiling (Fig 8.12)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_08/stencil3d_regtile",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_08",
+            "preLaunchTask": "Build Ch08 (debug)"
         }
     ]
 }

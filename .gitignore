@@ -24,6 +24,12 @@ chapter_07/conv2d_const
 chapter_07/conv2d_tiled
 chapter_07/conv2d_cached
 
+chapter_08/stencil1d
+chapter_08/stencil3d_basic
+chapter_08/stencil3d_shared
+chapter_08/stencil3d_coarsened
+chapter_08/stencil3d_regtile
+
 chapter_05/memory_types
 chapter_05/tiled_matmul
 chapter_05/tiled_matmul_32
