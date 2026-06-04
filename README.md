@@ -1,5 +1,7 @@
 # Programming Massively Parallel Processors — Code Samples
 
+<img src="cover.jpg" alt="Book cover" width="300"/>
+
 Runnable CUDA C code samples for every chapter of  
 **"Programming Massively Parallel Processors: A Hands-on Approach" (4th edition, 2023)**  
 by Wen-mei W. Hwu, David B. Kirk, and Izzat El Hajj.
