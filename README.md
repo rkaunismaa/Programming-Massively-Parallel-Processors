@@ -241,6 +241,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 4 | Compute Architecture and Scheduling | [chapter_04/](chapter_04/) |
 | 5 | Memory Architecture and Data Locality | [chapter_05/](chapter_05/) |
 | 6 | Performance Considerations | [chapter_06/](chapter_06/) |
+| 7 | Convolution | [chapter_07/](chapter_07/) |
 
 ---
 

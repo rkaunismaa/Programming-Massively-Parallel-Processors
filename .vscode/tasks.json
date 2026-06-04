@@ -106,6 +106,24 @@
                 "reveal": "always",
                 "panel": "shared"
             }
+        },
+        {
+            "label": "Build Ch07 (debug)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_07 SM_ARCH=sm_89 DEBUG=1",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build Ch07 (release)",
+            "type": "shell",
+            "command": "make -C ${workspaceFolder}/chapter_07 SM_ARCH=sm_89",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
         }
     ]
 }

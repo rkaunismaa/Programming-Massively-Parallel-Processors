@@ -238,6 +238,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_06",
             "preLaunchTask": "Build Ch06 (debug)"
+        },
+
+        // ── Chapter 7 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch07: 1D convolution",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_07/conv1d",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_07",
+            "preLaunchTask": "Build Ch07 (debug)"
+        },
+        {
+            "name": "Ch07: 2D basic (Fig 7.7)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_07/conv2d_basic",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_07",
+            "preLaunchTask": "Build Ch07 (debug)"
+        },
+        {
+            "name": "Ch07: 2D constant memory (Fig 7.9)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_07/conv2d_const",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_07",
+            "preLaunchTask": "Build Ch07 (debug)"
+        },
+        {
+            "name": "Ch07: 2D tiled halo (Fig 7.12)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_07/conv2d_tiled",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_07",
+            "preLaunchTask": "Build Ch07 (debug)"
+        },
+        {
+            "name": "Ch07: 2D cached halo (Fig 7.15)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_07/conv2d_cached",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_07",
+            "preLaunchTask": "Build Ch07 (debug)"
         }
     ]
 }

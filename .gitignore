@@ -18,6 +18,12 @@ chapter_06/corner_turning
 chapter_06/thread_coarsening
 chapter_06/opt_progression
 
+chapter_07/conv1d
+chapter_07/conv2d_basic
+chapter_07/conv2d_const
+chapter_07/conv2d_tiled
+chapter_07/conv2d_cached
+
 chapter_05/memory_types
 chapter_05/tiled_matmul
 chapter_05/tiled_matmul_32
@@ -49,3 +55,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# ── Logs and databases ───────────────────────────────────────────────────
+Claude_Resume.txt
