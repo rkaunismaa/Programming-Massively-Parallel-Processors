@@ -426,6 +426,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_10",
             "preLaunchTask": "Build Ch10 (debug)"
+        },
+
+        // ── Chapter 11 ────────────────────────────────────────────────────
+        {
+            "name": "Ch11: scan Kogge-Stone (Fig 11.3)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_11/scan_kogge_stone",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_11",
+            "preLaunchTask": "Build Ch11 (debug)"
+        },
+        {
+            "name": "Ch11: scan Brent-Kung (Fig 11.7)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_11/scan_brent_kung",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_11",
+            "preLaunchTask": "Build Ch11 (debug)"
+        },
+        {
+            "name": "Ch11: scan coarsened (Fig 11.8)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_11/scan_coarsened",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_11",
+            "preLaunchTask": "Build Ch11 (debug)"
+        },
+        {
+            "name": "Ch11: scan hierarchical (Fig 11.9)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_11/scan_hierarchical",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_11",
+            "preLaunchTask": "Build Ch11 (debug)"
+        },
+        {
+            "name": "Ch11: scan single-pass (§11.7)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_11/scan_single_pass",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_11",
+            "preLaunchTask": "Build Ch11 (debug)"
         }
     ]
 }

@@ -42,6 +42,12 @@ chapter_10/reduction_shared
 chapter_10/reduction_multiblock
 chapter_10/reduction_coarsened
 
+chapter_11/scan_kogge_stone
+chapter_11/scan_brent_kung
+chapter_11/scan_coarsened
+chapter_11/scan_hierarchical
+chapter_11/scan_single_pass
+
 chapter_05/memory_types
 chapter_05/tiled_matmul
 chapter_05/tiled_matmul_32
