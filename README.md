@@ -250,6 +250,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 11 | Prefix Sum (Scan) | [chapter_11/](chapter_11/) |
 | 12 | Merge | [chapter_12/](chapter_12/) |
 | 13 | Sorting | [chapter_13/](chapter_13/) |
+| 14 | Sparse Matrix Computation | [chapter_14/](chapter_14/) |
 
 ---
 
