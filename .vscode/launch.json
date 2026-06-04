@@ -332,6 +332,53 @@
             "args": [],
             "cwd": "${workspaceFolder}/chapter_08",
             "preLaunchTask": "Build Ch08 (debug)"
+        },
+
+        // ── Chapter 9 ─────────────────────────────────────────────────────
+        {
+            "name": "Ch09: histogram atomic basic (Fig 9.6)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_09/histogram_basic",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_09",
+            "preLaunchTask": "Build Ch09 (debug)"
+        },
+        {
+            "name": "Ch09: histogram privatized global (Fig 9.9)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_09/histogram_priv_global",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_09",
+            "preLaunchTask": "Build Ch09 (debug)"
+        },
+        {
+            "name": "Ch09: histogram privatized shared (Fig 9.10)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_09/histogram_priv_shared",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_09",
+            "preLaunchTask": "Build Ch09 (debug)"
+        },
+        {
+            "name": "Ch09: histogram coarsened (Figs 9.12+9.14)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_09/histogram_coarsened",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_09",
+            "preLaunchTask": "Build Ch09 (debug)"
+        },
+        {
+            "name": "Ch09: histogram aggregated (Fig 9.15)",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/chapter_09/histogram_aggregated",
+            "args": [],
+            "cwd": "${workspaceFolder}/chapter_09",
+            "preLaunchTask": "Build Ch09 (debug)"
         }
     ]
 }

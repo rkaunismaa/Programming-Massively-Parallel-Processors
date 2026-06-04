@@ -30,6 +30,12 @@ chapter_08/stencil3d_shared
 chapter_08/stencil3d_coarsened
 chapter_08/stencil3d_regtile
 
+chapter_09/histogram_basic
+chapter_09/histogram_priv_global
+chapter_09/histogram_priv_shared
+chapter_09/histogram_coarsened
+chapter_09/histogram_aggregated
+
 chapter_05/memory_types
 chapter_05/tiled_matmul
 chapter_05/tiled_matmul_32

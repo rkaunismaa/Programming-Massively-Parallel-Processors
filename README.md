@@ -243,6 +243,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 6 | Performance Considerations | [chapter_06/](chapter_06/) |
 | 7 | Convolution | [chapter_07/](chapter_07/) |
 | 8 | Stencil | [chapter_08/](chapter_08/) |
+| 9 | Parallel Histogram | [chapter_09/](chapter_09/) |
 
 ---
 
