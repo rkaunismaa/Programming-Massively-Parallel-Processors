@@ -252,6 +252,10 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 13 | Sorting | [chapter_13/](chapter_13/) |
 | 14 | Sparse Matrix Computation | [chapter_14/](chapter_14/) |
 | 15 | Graph Traversal | [chapter_15/](chapter_15/) |
+| 16 | Deep Learning | [chapter_16/](chapter_16/) |
+| 17 | Iterative MRI Reconstruction | [chapter_17/](chapter_17/) |
+| 18 | Electrostatic Potential | [chapter_18/](chapter_18/) |
+| 21 | CUDA Dynamic Parallelism | [chapter_21/](chapter_21/) |
 
 ---
 
