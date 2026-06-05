@@ -255,6 +255,7 @@ You can also use the **Debug Console** to run `cuda-gdb` commands directly:
 | 16 | Deep Learning | [chapter_16/](chapter_16/) |
 | 17 | Iterative MRI Reconstruction | [chapter_17/](chapter_17/) |
 | 18 | Electrostatic Potential | [chapter_18/](chapter_18/) |
+| 20 | Programming a Heterogeneous Computing Cluster | [chapter_20/](chapter_20/) |
 | 21 | CUDA Dynamic Parallelism | [chapter_21/](chapter_21/) |
 | 22 | Advanced Practices and Future Evolution | [chapter_22/](chapter_22/) |
 
