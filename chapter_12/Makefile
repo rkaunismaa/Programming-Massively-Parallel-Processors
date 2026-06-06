@@ -1,4 +1,4 @@
-SM_ARCH   ?= sm_89
+SM_ARCH   ?= sm_61
 TILE_SIZE ?= 512
 NVCC      := nvcc
 NVCCFLAGS := -arch=$(SM_ARCH) -O2 -std=c++14 \
@@ -30,5 +30,5 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Examples:
-#   make SM_ARCH=sm_89 TILE_SIZE=1024
-#   make SM_ARCH=sm_89 DEBUG=1
+#   make SM_ARCH=sm_61 TILE_SIZE=1024
+#   make SM_ARCH=sm_61 DEBUG=1

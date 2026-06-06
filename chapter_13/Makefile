@@ -1,4 +1,4 @@
-SM_ARCH   ?= sm_89
+SM_ARCH   ?= sm_61
 SEG_SIZE  ?= 256
 TILE_SIZE ?= 256
 NVCC      := nvcc
@@ -35,6 +35,6 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Examples:
-#   make SM_ARCH=sm_89
-#   make SM_ARCH=sm_89 SEG_SIZE=512 TILE_SIZE=512
-#   make SM_ARCH=sm_89 DEBUG=1 radix_sort_parallel
+#   make SM_ARCH=sm_61
+#   make SM_ARCH=sm_61 SEG_SIZE=512 TILE_SIZE=512
+#   make SM_ARCH=sm_61 DEBUG=1 radix_sort_parallel

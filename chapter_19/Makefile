@@ -1,4 +1,4 @@
-SM_ARCH   ?= sm_89
+SM_ARCH   ?= sm_61
 NVCC      := nvcc
 NVCCFLAGS := -arch=$(SM_ARCH) -O2 -std=c++14
 

@@ -6,7 +6,7 @@ NVCC      = nvcc
 NVCCFLAGS = -O2 -arch=$(SM_ARCH)
 
 # Pass DEBUG=1 to add host (-g) and device (-G) debug symbols for cuda-gdb.
-# Example: make SM_ARCH=sm_89 DEBUG=1
+# Example: make SM_ARCH=sm_61 DEBUG=1
 ifdef DEBUG
   NVCCFLAGS += -g -G
 endif

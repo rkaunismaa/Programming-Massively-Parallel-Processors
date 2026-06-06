@@ -1,4 +1,4 @@
-SM_ARCH      ?= sm_89
+SM_ARCH      ?= sm_61
 COARSE_FACTOR ?= 4
 NVCC         := nvcc
 NVCCFLAGS    := -arch=$(SM_ARCH) -O2 -std=c++14 -DCOARSE_FACTOR=$(COARSE_FACTOR)
@@ -33,4 +33,4 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Example: coarsen by 8
-#   make SM_ARCH=sm_89 COARSE_FACTOR=8
+#   make SM_ARCH=sm_61 COARSE_FACTOR=8

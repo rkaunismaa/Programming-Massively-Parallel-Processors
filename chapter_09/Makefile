@@ -1,4 +1,4 @@
-SM_ARCH  ?= sm_89
+SM_ARCH  ?= sm_61
 CFACTOR  ?= 4
 NVCC     := nvcc
 NVCCFLAGS := -arch=$(SM_ARCH) -O2 -std=c++14 -DCFACTOR=$(CFACTOR)
@@ -33,4 +33,4 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Example: build with coarsening factor 8
-#   make SM_ARCH=sm_89 CFACTOR=8
+#   make SM_ARCH=sm_61 CFACTOR=8

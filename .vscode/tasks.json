@@ -5,7 +5,7 @@
             "label": "Build Ch02 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_61", "DEBUG=1"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -31,7 +31,7 @@
             "label": "Build Ch02 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -41,7 +41,7 @@
             "label": "Build Ch03 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -51,7 +51,7 @@
             "label": "Build Ch03 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -61,7 +61,7 @@
             "label": "Build Ch04 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -71,7 +71,7 @@
             "label": "Build Ch04 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -81,7 +81,7 @@
             "label": "Build Ch05 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -91,7 +91,7 @@
             "label": "Build Ch05 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -101,7 +101,7 @@
             "label": "Build Ch06 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -111,7 +111,7 @@
             "label": "Build Ch06 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -121,7 +121,7 @@
             "label": "Build Ch07 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -131,7 +131,7 @@
             "label": "Build Ch07 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -141,7 +141,7 @@
             "label": "Build Ch08 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -151,7 +151,7 @@
             "label": "Build Ch08 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -161,7 +161,7 @@
             "label": "Build Ch09 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -171,7 +171,7 @@
             "label": "Build Ch09 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -181,7 +181,7 @@
             "label": "Build Ch10 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -191,7 +191,7 @@
             "label": "Build Ch10 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -201,7 +201,7 @@
             "label": "Build Ch11 (debug)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_89", "DEBUG=1"],
+            "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_61", "DEBUG=1"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"
@@ -211,7 +211,7 @@
             "label": "Build Ch11 (release)",
             "type": "shell",
             "command": "make",
-            "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_89"],
+            "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_61"],
             "presentation": {
                 "reveal": "always",
                 "panel": "shared"

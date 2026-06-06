@@ -1,4 +1,4 @@
-SM_ARCH       ?= sm_89
+SM_ARCH       ?= sm_61
 FILTER_RADIUS ?= 2
 NVCC          := nvcc
 NVCCFLAGS     := -arch=$(SM_ARCH) -O2 -std=c++14 \
@@ -33,4 +33,4 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Example: build with a 9×9 filter (FILTER_RADIUS=4)
-#   make SM_ARCH=sm_89 FILTER_RADIUS=4
+#   make SM_ARCH=sm_61 FILTER_RADIUS=4

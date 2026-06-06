@@ -1,4 +1,4 @@
-SM_ARCH  ?= sm_89
+SM_ARCH  ?= sm_61
 NVCC     := nvcc
 NVCCFLAGS := -arch=$(SM_ARCH) -O2 -std=c++14
 
@@ -32,6 +32,6 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Examples:
-#   make SM_ARCH=sm_89
-#   make SM_ARCH=sm_89 DEBUG=1 bezier_cdp
-#   make SM_ARCH=sm_89 quadtree_cdp
+#   make SM_ARCH=sm_61
+#   make SM_ARCH=sm_61 DEBUG=1 bezier_cdp
+#   make SM_ARCH=sm_61 quadtree_cdp

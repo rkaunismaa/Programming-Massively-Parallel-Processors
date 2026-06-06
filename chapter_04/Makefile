@@ -1,6 +1,6 @@
 # Chapter 4 — Compute Architecture and Scheduling
 #
-# Adjust SM_ARCH to match your GPU (sm_70=V100, sm_80=A100, sm_86=RTX30xx, sm_89=RTX40xx)
+# Adjust SM_ARCH to match your GPU (sm_70=V100, sm_80=A100, sm_86=RTX30xx, sm_61=RTX40xx)
 SM_ARCH  ?= sm_70
 NVCC      = nvcc
 NVCCFLAGS = -O2 -arch=$(SM_ARCH)

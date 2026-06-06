@@ -1,4 +1,4 @@
-SM_ARCH      ?= sm_89
+SM_ARCH      ?= sm_61
 SECTION_SIZE ?= 1024
 BLOCK_DIM    ?= 256
 CFACTOR      ?= 4
@@ -38,5 +38,5 @@ clean:
 	rm -f $(TARGETS) *.o *.ptx *.cubin *.fatbin
 
 # Examples:
-#   make SM_ARCH=sm_89 SECTION_SIZE=512    # smaller sections
-#   make SM_ARCH=sm_89 CFACTOR=8           # more coarsening
+#   make SM_ARCH=sm_61 SECTION_SIZE=512    # smaller sections
+#   make SM_ARCH=sm_61 CFACTOR=8           # more coarsening

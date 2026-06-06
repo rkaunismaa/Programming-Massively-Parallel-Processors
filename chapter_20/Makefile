@@ -1,4 +1,4 @@
-SM_ARCH  ?= sm_89
+SM_ARCH  ?= sm_61
 NVCC     := nvcc
 NVCCFLAGS := -arch=$(SM_ARCH) -O2 -std=c++14
 
@@ -16,11 +16,11 @@ stencil_streams: 01_stencil_streams.cu
 
 # ── Target 2: full MPI+CUDA stencil (requires Open MPI / MVAPICH2) ───────────
 # Install MPI:  sudo apt install libopenmpi-dev openmpi-bin
-# Then build:   make SM_ARCH=sm_89 mpi_cuda_stencil
+# Then build:   make SM_ARCH=sm_61 mpi_cuda_stencil
 # Run:          mpirun -np 5 ./mpi_cuda_stencil
 #
 # For CUDA-aware MPI (§20.7):
-#   make SM_ARCH=sm_89 CUDA_AWARE=1 mpi_cuda_stencil
+#   make SM_ARCH=sm_61 CUDA_AWARE=1 mpi_cuda_stencil
 
 MPICC    := mpicxx
 CUDA_INC := $(shell nvcc --dryrun 2>&1 | grep -o '\-I[^ ]*' | head -1 || echo -I/usr/local/cuda/include)

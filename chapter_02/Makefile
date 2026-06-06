@@ -14,7 +14,7 @@ NVCCFLAGS = -O2 -arch=$(SM_ARCH)
 CFLAGS    = -O2 -Wall
 
 # Pass DEBUG=1 to add host (-g) and device (-G) debug symbols for cuda-gdb.
-# Example: make SM_ARCH=sm_89 DEBUG=1
+# Example: make SM_ARCH=sm_61 DEBUG=1
 # Note: -G disables GPU optimisations — only use for debugging, not benchmarking.
 ifdef DEBUG
   NVCCFLAGS += -g -G

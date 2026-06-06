@@ -1,6 +1,6 @@
 # Chapter 5 — Memory Architecture and Data Locality
 #
-# Adjust SM_ARCH to match your GPU (sm_70=V100, sm_80=A100, sm_86=RTX30xx, sm_89=RTX40xx)
+# Adjust SM_ARCH to match your GPU (sm_70=V100, sm_80=A100, sm_86=RTX30xx, sm_61=RTX40xx)
 SM_ARCH  ?= sm_70
 NVCC      = nvcc
 NVCCFLAGS = -O2 -arch=$(SM_ARCH)
@@ -25,7 +25,7 @@ memory_types: 01_memory_types_demo.cu
 tiled_matmul: 02_tiled_matmul.cu
 	$(NVCC) $(NVCCFLAGS) -o $@ $< -lm
 
-# Build with alternative tile width: make SM_ARCH=sm_89 TILE=32 tiled_matmul
+# Build with alternative tile width: make SM_ARCH=sm_61 TILE=32 tiled_matmul
 tiled_matmul: 02_tiled_matmul.cu
 	$(NVCC) $(NVCCFLAGS) $(if $(TILE),-DTILE_WIDTH=$(TILE)) -o $@ $< -lm
 
