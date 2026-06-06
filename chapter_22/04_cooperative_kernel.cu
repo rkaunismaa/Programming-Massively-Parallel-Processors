@@ -81,6 +81,17 @@ int main(void) {
         printf("Device does not support cooperative kernel launch (need cc ≥ 6.0).\n");
         return 0;
     }
+    /* Consumer Pascal (GTX 10xx, cc 6.1) reports cooperativeLaunch=true but
+       grid.sync() deadlocks in practice — only Volta+ and enterprise Pascal
+       (P100/cc 6.0) reliably support device-wide barriers. */
+    if (prop.major == 6 && prop.minor != 0) {
+        printf("Device: %s  (%d SMs, cc %d.%d)\n",
+               prop.name, prop.multiProcessorCount, prop.major, prop.minor);
+        printf("Skipping cooperative launch: consumer Pascal does not reliably\n"
+               "support grid.sync() despite reporting cooperativeLaunch=true.\n"
+               "Use Volta (cc 7.0) or later for reliable cooperative kernels.\n");
+        return 0;
+    }
     printf("Device: %s  (%d SMs, cc %d.%d)\n\n",
            prop.name, prop.multiProcessorCount,
            prop.major, prop.minor);
