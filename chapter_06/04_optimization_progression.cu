@@ -103,10 +103,12 @@ void k4_coarsened(const float* M, const float* N, float* P, int w) {
 }
 
 /* ── Timing ──────────────────────────────────────────────────────── */
-#define TIME(expr)  do {                                                   \
-    expr; cudaDeviceSynchronize();                                         \
+/* Variadic macro needed: CUDA <<<g,b>>> contains commas the preprocessor
+   would otherwise interpret as argument separators in a single-arg macro. */
+#define TIME(...)  do {                                                    \
+    __VA_ARGS__; cudaDeviceSynchronize();                                  \
     cudaEventRecord(t0);                                                   \
-    for (int _r=0;_r<N_RUNS;_r++) { expr; }                               \
+    for (int _r=0;_r<N_RUNS;_r++) { __VA_ARGS__; }                        \
     cudaEventRecord(t1); cudaEventSynchronize(t1);                         \
     cudaEventElapsedTime(&ms, t0, t1); ms /= N_RUNS;                      \
 } while(0)
