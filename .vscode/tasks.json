@@ -6,24 +6,15 @@
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_61", "DEBUG=1"],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            },
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "group": { "kind": "build", "isDefault": true },
+            "presentation": { "reveal": "always", "panel": "shared" },
             "problemMatcher": {
                 "owner": "nvcc",
                 "fileLocation": ["relative", "${workspaceFolder}"],
                 "pattern": {
                     "regexp": "^(.*):(\\d+):(\\d+): (error|warning): (.*)$",
-                    "file": 1,
-                    "line": 2,
-                    "column": 3,
-                    "severity": 4,
-                    "message": 5
+                    "file": 1, "line": 2, "column": 3, "severity": 4, "message": 5
                 }
             }
         },
@@ -32,190 +23,475 @@
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_02", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch02",
+            "type": "shell",
+            "command": "for b in error_checking function_qualifiers grayscale vec_add_cuda vec_add_sequential; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_02", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch03 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch03 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_03", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch03",
+            "type": "shell",
+            "command": "for b in color_to_grayscale image_blur matrix_multiply multidim_grid row_major; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_03", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch04 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch04 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_04", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch04",
+            "type": "shell",
+            "command": "for b in barrier_sync control_divergence occupancy query_device warp_partitioning; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_04", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch05 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch05 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_05", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch05",
+            "type": "shell",
+            "command": "for b in dynamic_shmem memory_types roofline tiled_matmul tiled_matmul_bc; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_05", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch06 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch06 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_06", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch06",
+            "type": "shell",
+            "command": "for b in coalescing_demo corner_turning opt_progression thread_coarsening; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_06", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch07 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch07 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_07", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch07",
+            "type": "shell",
+            "command": "for b in conv1d conv2d_basic conv2d_cached conv2d_const conv2d_tiled; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_07", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch08 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch08 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_08", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch08",
+            "type": "shell",
+            "command": "for b in stencil1d stencil3d_basic stencil3d_coarsened stencil3d_regtile stencil3d_shared; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_08", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch09 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch09 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_09", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch09",
+            "type": "shell",
+            "command": "for b in histogram_aggregated histogram_basic histogram_coarsened histogram_priv_global histogram_priv_shared; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_09", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch10 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch10 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_10", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch10",
+            "type": "shell",
+            "command": "for b in reduction_coarsened reduction_convergent reduction_multiblock reduction_shared reduction_simple; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_10", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch11 (debug)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_61", "DEBUG=1"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         },
         {
             "label": "Build Ch11 (release)",
             "type": "shell",
             "command": "make",
             "args": ["-C", "${workspaceFolder}/chapter_11", "SM_ARCH=sm_61"],
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared"
-            }
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch11",
+            "type": "shell",
+            "command": "for b in scan_brent_kung scan_coarsened scan_hierarchical scan_kogge_stone scan_single_pass; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_11", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch12 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_12", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch12 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_12", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch12",
+            "type": "shell",
+            "command": "for b in merge_basic merge_circular_buffer merge_sequential merge_tiled; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_12", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch13 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_13", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch13 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_13", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch13",
+            "type": "shell",
+            "command": "for b in parallel_merge_sort radix_sort_coalesced radix_sort_parallel radix_sort_sequential; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_13", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch14 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_14", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch14 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_14", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch14",
+            "type": "shell",
+            "command": "for b in spmv_coo spmv_csr spmv_ell spmv_ell_coo spmv_jds; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_14", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch15 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_15", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch15 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_15", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch15",
+            "type": "shell",
+            "command": "for b in bfs_edge_centric bfs_frontier_privatized bfs_frontier_push bfs_vertex_pull bfs_vertex_push; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_15", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch16 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_16", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch16 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_16", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch16",
+            "type": "shell",
+            "command": "for b in conv_forward_basic conv_forward_gemm; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_16", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch17 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_17", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch17 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_17", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch17",
+            "type": "shell",
+            "command": "for b in fhd_constmem fhd_gather fhd_register fhd_scatter; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_17", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch18 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_18", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch18 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_18", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch18",
+            "type": "shell",
+            "command": "for b in dcs_coalesce dcs_coarsen dcs_gather; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_18", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch19 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_19", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch19 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_19", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch19",
+            "type": "shell",
+            "command": "for b in amdahl decomposition; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_19", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch20 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_20", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch20 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_20", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch20",
+            "type": "shell",
+            "command": "for b in stencil_streams; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_20", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch21 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_21", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch21 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_21", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch21",
+            "type": "shell",
+            "command": "for b in bezier_cdp bezier_no_cdp cdp_overview quadtree_cdp; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_21", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch22 (debug)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_22", "SM_ARCH=sm_61", "DEBUG=1"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Build Ch22 (release)",
+            "type": "shell",
+            "command": "make",
+            "args": ["-C", "${workspaceFolder}/chapter_22", "SM_ARCH=sm_61"],
+            "options": { "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
+        },
+        {
+            "label": "Run Ch22",
+            "type": "shell",
+            "command": "for b in concurrent_streams cooperative_kernel unified_memory zero_copy; do echo \"--- $b ---\"; ./$b; done",
+            "options": { "cwd": "${workspaceFolder}/chapter_22", "env": { "CUDA_VISIBLE_DEVICES": "1" } },
+            "presentation": { "reveal": "always", "panel": "shared" }
         }
     ]
 }
